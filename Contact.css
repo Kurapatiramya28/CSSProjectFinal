@@ -1,0 +1,94 @@
+body{
+     background: #1c1f26;  
+}
+h2{
+    color:dodgerblue;
+    font-size:30px;
+}
+.contact-container {
+ width: 85%;
+    background: white;
+    margin: auto;
+    padding: 40px;
+    border-radius: 15px;
+    justify-content:space-around;
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap:5px;
+
+    box-shadow: 0 4px 20px rgba(0,0,0,0.25);
+     
+
+}
+.contact-left {
+    flex: 1;
+    display: flex;
+    text-align:center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-left input,
+.contact-left textarea {
+    padding: 14px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    width: 60%;
+}
+
+.contact-left textarea {
+    height: 150px;
+    resize: none;
+}
+.subject-select {
+    padding: 14px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    width: 60%;
+    background-color: white;
+    cursor: pointer;
+}
+
+
+.send-btn {
+    background: #1aa3e0;
+    color: white;
+    padding: 12px 32px;
+    border: none;
+    border-radius: 6px;
+    font-size: 17px;
+    cursor: pointer;
+    width:60%;
+}
+
+.send-btn:hover {
+    background: #0d8ac7;
+}
+
+/* RIGHT SIDE : MAP + DETAILS */
+.contact-right {
+    flex: 1;
+}
+
+.map-box iframe {
+    width: 100%;
+    height: 260px;
+    border-radius: 8px;
+}
+
+.map-details {
+    margin-top: 20px;
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+.map-details p {
+    margin-bottom: 12px;
+}
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+    }
+}
